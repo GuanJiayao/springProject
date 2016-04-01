@@ -23,11 +23,5 @@ public class RegisterServiceTest {
     @Resource
     RegisterService service = null;
 
-    @Test
-    public void testGetInfo() throws Exception {
-//TODO: Test goes here...
-        System.out.println(service.getInfo());
-    }
-
 
 } 

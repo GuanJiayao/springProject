@@ -1,11 +1,12 @@
 package com.zhangyao.mapper;
 
+import com.zhangyao.model.User;
+
 /**
  * Created by zhangyao on 16-3-24.
  */
 public interface RegisterMapper {
 
-    boolean register();
-    String getInfo();
+    boolean register(User user);
 
 }

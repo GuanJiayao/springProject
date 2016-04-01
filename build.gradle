@@ -22,5 +22,8 @@ dependencies {
     compile 'org.springframework:spring-jdbc:4.2.4.RELEASE'
     compile 'org.springframework:spring-test:2.5.6'
     compile 'mysql:mysql-connector-java:5.1.8'
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: '5.2.4.Final'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.3'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
 
 }

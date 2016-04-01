@@ -1,6 +1,7 @@
 package com.zhangyao.service;
 
 import com.zhangyao.mapper.RegisterMapper;
+import com.zhangyao.model.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -14,9 +15,9 @@ public class RegisterService {
     @Resource
     RegisterMapper mapper;
 
-    public String getInfo()
-    {
-        return mapper.getInfo();
+
+    public boolean regiser(User user){
+     return mapper.register(user);
     }
 
 
