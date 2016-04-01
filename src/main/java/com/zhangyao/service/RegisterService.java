@@ -15,9 +15,13 @@ public class RegisterService {
     @Resource
     RegisterMapper mapper;
 
+    public int register(User user){
 
-    public boolean regiser(User user){
-     return mapper.register(user);
+      return mapper.register(user);
+    }
+
+    public String login(User user) {
+        return mapper.login(user);
     }
 
 

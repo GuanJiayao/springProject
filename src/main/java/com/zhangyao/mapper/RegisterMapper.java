@@ -7,6 +7,9 @@ import com.zhangyao.model.User;
  */
 public interface RegisterMapper {
 
-    boolean register(User user);
+
+    String login(User user);
+
+    int register(User user);
 
 }
