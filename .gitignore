@@ -22,8 +22,7 @@ hs_err_pid*
 .idea/
 out/
 build/
-**/build/
-classes/
-.gradle
+classes/*
+.gradle/
 production/
 
