@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhangyao.mapper.FriendsMapper">
+
+    <!--<resultMap id="friends" type="Friend">-->
+    <!--</resultMap>-->
+
+    <!--<insert id="addFriend" parameterType="Friend">-->
+
+        <!--INSERT  INTO tb_friends(uuid,qq,nickName,name,sex,knowTime,phone,question,answer)-->
+        <!--VALUES (-->
+         <!--replace(UUID(),'-',''),-->
+         <!--#{qq},-->
+         <!--#{nickName},-->
+         <!--#{name},-->
+         <!--#{sex},-->
+         <!--#{knowTime},-->
+         <!--#{phone},-->
+         <!--#{question},-->
+         <!--#{answer}-->
+        <!--)-->
+    <!--</insert>-->
+
+    <!--<update id="updateFriend" parameterType="Friend">-->
+        <!--UPDATE tb_friends-->
+        <!--<set>-->
+            <!--<if test="qq != null and qq != ''">-->
+                <!--qq = #{qq} ,-->
+            <!--</if>-->
+            <!--<if test="nickName != null and nickName != ''">-->
+                <!--nickName = #{nickName} ,-->
+            <!--</if>-->
+            <!--<if test="name != null and name != ''">-->
+                <!--name = #{name} ,-->
+            <!--</if>-->
+            <!--<if test="sex != null and sex != ''">-->
+                <!--sex = #{sex} ,-->
+            <!--</if>-->
+            <!--<if test="knowTime != null and knowTime != ''">-->
+                <!--knowTime = #{knowTime} ,-->
+            <!--</if>-->
+            <!--<if test="phone != null and phone != ''">-->
+                <!--phone = #{phone} ,-->
+            <!--</if>-->
+            <!--<if test="question != null and question != ''">-->
+                <!--question = #{question} ,-->
+            <!--</if>-->
+            <!--<if test="answer != null and answer != ''">-->
+                <!--answer = #{answer}-->
+            <!--</if>-->
+        <!--</set>-->
+        <!--<where>-->
+            <!--uuid = #{uuid}-->
+        <!--</where>-->
+
+    <!--</update>-->
+
+    <!--<select id="listFriends" parameterType="SearchOption" resultMap="friends">-->
+        <!--SELECT ${field} FROM tb_friends-->
+        <!--<where>-->
+            <!--1 = 1-->
+            <!--AND-->
+            <!--${condition}-->
+        <!--</where>-->
+        <!--order by  #{orderBy} #{orderKey}-->
+        <!--limit #{offSet},#{pageSize}-->
+    <!--</select>-->
+
+    <!--<select id="getCount" parameterType="SearchOption" resultType="java.lang.Integer">-->
+        <!--SELECT count(*) FROM tb_friends-->
+        <!--<where>-->
+            <!--1 = 1-->
+            <!--AND-->
+            <!--${condition}-->
+        <!--</where>-->
+        <!--ORDER BY #{orderBy} #{orderKey}-->
+        <!--limit #{offSet},#{pageSize}-->
+    <!--</select>-->
+
+    <!--<delete id="deleteFriend">-->
+        <!--update tb_friends SET isDelete = TRUE-->
+        <!--<where>-->
+            <!--uuid = #{uuid}-->
+        <!--</where>-->
+    <!--</delete>-->
+</mapper>
